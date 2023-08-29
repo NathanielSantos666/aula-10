@@ -1,0 +1,68 @@
+//A
+//1.a: nada vai ser mostrado no console, porque a variavel array não possiu valores dentro dela
+//1.b: ainda não vai mostrar nada, pois null não é nem uma string, nem number, nem booleano
+//1.c: agora irá mostrar os valores dentro do array e a quantidade de caracteres presentes
+//1.d: criou uma variavel equivalente a 0 (id), pediu para o console mostrar o valo rde id equivalente á 0
+//1.e: ira substituir o elemento que tiver o id 1 para 19
+//1.f: ira mostrar o elemento de id 6
+
+//2. SUBI NUM ONIBUS EM MIRROCOS, 27
+
+//B
+//1.
+// let nome = prompt('Insira seu nome.');
+// nome.toString();
+// let email = prompt('Insira seu email.');
+// email.toString();
+// alert(`O email ${email} foi cadastrado com sucesso. Seja bem-vindo(a) ${nome}!`);
+
+//2.
+// let papinhas = ['pizza', 'sorvete', 'lasanha', 'panqueca', 'açaí'];
+// console.log(papinhas);
+// console.log('essas são as minhas comidas favoritas :)');
+// console.log(papinhas[0]);
+// console.log(papinhas[1]);
+// console.log(papinhas[2]);
+// console.log(papinhas[3]);
+// console.log(papinhas[4]);
+// papinhas[1] = prompt("digite uma comida");
+// console.log(papinhas);
+
+//3.
+// let listaDeTarefas
+// let array
+// array = null
+// listaDeTarefas = array
+// let pergunta1 = prompt('Cite uma tarefa que voce realiza pela manhã.');
+// let pergunta2 = prompt('Cite uma tarefa que voce realiza pela tarde.');
+// let pergunta3 = prompt('Cite uma tarefa que voce realiza pela noite.');
+// array = [pergunta1, pergunta2, pergunta3];
+// console.log(array);
+// let id = prompt('Insira um id de 0 á 2');
+// array.splice(1, 1);
+// console.log(array);
+
+//DESAFIO
+// let frase = prompt('escreva uma frase');
+// let array = frase.toString().split(' ');
+// console.log(array);
+// console.log(array.indexOf('abacaxi'));
+// console.log(array[2].length);
+
+//bagulho do palindromo
+// let frase = prompt('Insira uma frase');
+// let array = frase.toString().split(' ');
+// console.log(array);
+// let a = array.slice().reverse();
+// a = a.join("");
+// console.log(a);
+
+console.log('----------------------------------------');
+
+let texto = prompt('insira uma frase');
+let reverso = texto.toString().split('').reverse().join('');
+if(texto === reverso) {
+    console.log(`A palavra ${texto} é um palíndromo! eba!`);
+} else {
+    console.log(`A palavra ${texto} não é um palíndromo! :(`);
+}
